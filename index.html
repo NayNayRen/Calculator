@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="stylesheets/styles.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <header class="header">Let's Calculate Some Numbers</header>
+  <div class="main calculator">
+    <form name="calculator">
+      <input class="output" name="output">
+      <div class="btn_container">
+        <div class="btn_group">
+          <input type="reset" class="btn clear_btn" id="clear_btn" value="C">
+          <input type="button" class="btn" id="back_btn" value="<" onclick="back()">
+          <input type="button" class="btn" id="add_btn" value="+" onclick="insert('+')">
+        </div>
+        <div class="btn_group">
+          <input type="button" class="btn" id="btn_1" value="1" onclick="insert(1)">
+          <input type="button" class="btn" id="btn_2" value="2" onclick="insert(2)">
+          <input type="button" class="btn" id="btn_3" value="3" onclick="insert(3)">
+          <input type="button" class="btn" id="sub_btn" value="-" onclick="insert('-')">
+        </div>
+        <div class="btn_group">
+          <input type="button" class="btn" id="btn_4" value="4" onclick="insert(4)">
+          <input type="button" class="btn" id="btn_5" value="5" onclick="insert(5)">
+          <input type="button" class="btn" id="btn_6" value="6" onclick="insert(6)">
+          <input type="button" class="btn" id="mult_btn" value="x" onclick="insert('*')">
+        </div>
+        <div class="btn_group">
+          <input type="button" class="btn" id="btn_7" value="7" onclick="insert(7)">
+          <input type="button" class="btn" id="btn_8" value="8" onclick="insert(8)">
+          <input type="button" class="btn" id="btn_9" value="9" onclick="insert(9)">
+          <input type="button" class="btn" id="div_btn" value="/" onclick="insert('/')">
+        </div>
+        <div class="btn_group">
+          <input type="button" class="btn" id="btn_0" value="0" onclick="insert(0)">
+          <input type="button" class="btn" id="dec_btn" value="." onclick="insert('.')">
+          <input type="button" class="btn equals_btn" id="equals_btn" value="=" onclick="equals()">
+        </div>
+      </div>
+    </form>
+  </div>
+<script src="scripts/calculations.js" charset="utf-8"></script>
+</body>
+</html>
