@@ -1,0 +1,122 @@
+/* body {
+  background-color: rgb(244, 164, 96);
+} */
+
+.btn {
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  margin: 0 5px;
+  outline: 1px solid #000;
+  text-align: center;
+  width: 40px;
+}
+
+.btn_container {
+  padding: 20px 10px;
+  /* outline: solid 1px red; */
+}
+
+.btn_group {
+  -ms-flex-direction: row;
+  -ms-flex-pack: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+  /* outline: solid 1px red; */
+}
+
+.calculator {
+  -ms-flex-direction: column;
+  -ms-flex-pack: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  -webkit-box-shadow: 0 0 20px #000;
+  background-color: rgb(105, 105, 105);
+  border-radius: 5px;
+  box-shadow: 0 0 20px #000;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  outline: solid 1px #000;
+  padding: 20px 15px;
+  width: auto;
+}
+
+.clear_btn {
+  background-color: rgb(255, 69, 0);
+  width: 85px;
+}
+
+.equals_btn {
+  background-color: rgb(135, 206, 250);
+  width: 85px;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.header {
+  background-color: #000;
+  color: #fff;
+  font-size: 30px;
+  padding: 15px 0;
+  text-align: center;
+  /* outline: solid 1px blue; */
+}
+
+.output {
+  background-color: silver;
+  border: solid 2px #000;
+  border-radius: 5px;
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 5px;
+  width: 180px;
+  /* outline: solid 1px blue; */
+}
+
+main {
+  -ms-flex-align: center;
+  -ms-flex-direction: column;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  align-items: center;
+  background-color: rgb(244, 164, 96);
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  min-height: 100%;
+  width: 100%;
+  /* outline: solid 1px red; */
+}
+
+@media(max-width: 700px) {
+  .header {
+    font-size: 26px;
+  }
+}
