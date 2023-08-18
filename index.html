@@ -11,63 +11,76 @@
     rel="stylesheet">
   <link rel="stylesheet" href="styles/page-reset.css">
   <link rel="stylesheet" href="styles/styles.css">
-  <title>Calculator</title>
+  <title>My Calculator</title>
   <link rel="icon" href="img/logo.png" type="image/x-icon" />
 </head>
 
 <body>
-  <header class="header">Calculate Some Numbers</header>
+  <header class="header">
+    <h1>
+      Make Some Numbers
+    </h1>
+  </header>
   <main class="main">
-    <h1>A calculator done by me.</h1>
+    <h1>A Calculator Done By Me</h1>
     <div class="container">
-      <p>Why? Because...why not? Yeah, there's calculators in literally everything now, but I
-        didn't build those. I built this one. It can perform some basic math, add, subtract, multiply and divide.
-      </p>
-      <p>If you click the input on desktop, or tap on mobile, you can use parenthesis for precedence. If something
-        doesn't evaluate, it will tell you.</p>
+      <div class="output-entered">
+        <!-- will be shot in -->
+      </div>
       <form class="calculator" name="calculator">
-        <div class="solar-container">
-          <div class="solar-cell"></div>
-          <div class="solar-cell"></div>
-          <div class="solar-cell"></div>
-          <div class="solar-cell"></div>
-          <div class="solar-cell"></div>
-        </div>
-        <input class="output" name="output">
+        <input class="output" name="output" disabled>
         <div class="btn-container">
           <div class="btn-group">
-            <input type="reset" class="btn clear-btn" id="clear-btn" value="C">
-            <input type="button" class="btn" id="back-btn" value="Del" onclick="back()">
-            <input type="button" class="btn" id="add-btn" value="+" onclick="insert('+')">
+            <input type="button" class="clear-btn" value="C">
+            <div class="solar-container">
+              <div class="solar-cell"></div>
+              <div class="solar-cell"></div>
+              <div class="solar-cell"></div>
+              <div class="solar-cell"></div>
+              <div class="solar-cell"></div>
+            </div>
           </div>
           <div class="btn-group">
-            <input type="button" class="btn" id="btn-1" value="1" onclick="insert(1)">
-            <input type="button" class="btn" id="btn-2" value="2" onclick="insert(2)">
-            <input type="button" class="btn" id="btn-3" value="3" onclick="insert(3)">
-            <input type="button" class="btn" id="sub-btn" value="-" onclick="insert('-')">
+            <input type="button" class="back-btn" value="Del">
+            <input type="button" class="btn" id="btn-1" value="(">
+            <input type="button" class="btn" id="btn-2" value=")">
+            <input type="button" class="btn" id="add-btn" value="+">
           </div>
           <div class="btn-group">
-            <input type="button" class="btn" id="btn-4" value="4" onclick="insert(4)">
-            <input type="button" class="btn" id="btn-5" value="5" onclick="insert(5)">
-            <input type="button" class="btn" id="btn-6" value="6" onclick="insert(6)">
-            <input type="button" class="btn" id="mult-btn" value="x" onclick="insert('*')">
+            <input type="button" class="btn" id="btn-1" value="1">
+            <input type="button" class="btn" id="btn-2" value="2">
+            <input type="button" class="btn" id="btn-3" value="3">
+            <input type="button" class="btn" id="sub-btn" value="-">
           </div>
           <div class="btn-group">
-            <input type="button" class="btn" id="btn-7" value="7" onclick="insert(7)">
-            <input type="button" class="btn" id="btn-8" value="8" onclick="insert(8)">
-            <input type="button" class="btn" id="btn-9" value="9" onclick="insert(9)">
-            <input type="button" class="btn" id="div-btn" value="/" onclick="insert('/')">
+            <input type="button" class="btn" id="btn-4" value="4">
+            <input type="button" class="btn" id="btn-5" value="5">
+            <input type="button" class="btn" id="btn-6" value="6">
+            <input type="button" class="btn" id="mult-btn" value="*">
           </div>
           <div class="btn-group">
-            <input type="button" class="btn" id="btn-0" value="0" onclick="insert(0)">
-            <input type="button" class="btn" id="dec-btn" value="." onclick="insert('.')">
-            <input type="button" class="btn equals-btn" id="equals-btn" value="=" onclick="equals()">
+            <input type="button" class="btn" id="btn-7" value="7">
+            <input type="button" class="btn" id="btn-8" value="8">
+            <input type="button" class="btn" id="btn-9" value="9">
+            <input type="button" class="btn" id="div-btn" value="/">
+          </div>
+          <div class="btn-group">
+            <input type="button" class="btn" id="btn-0" value="0">
+            <input type="button" class="btn" id="dec-btn" value=".">
+            <input type="button" class="equals-btn" value="=">
           </div>
         </div>
         <div class="company-name">
           <span>NayNay-Instruments</span>
         </div>
       </form>
+      <div class="container-info">
+        <p>Why? Because...why not? Yeah, there's calculators in literally everything now, but I
+          didn't build those. I built this one. It can perform some basic math: add, subtract, multiply and divide.
+        </p>
+        <p>If something
+          doesn't evaluate, it will tell you.</p>
+      </div>
     </div>
   </main>
   <footer>
