@@ -1,4 +1,5 @@
 body {
+  background-color: #000;
   font-family: 'Chakra Petch', sans-serif;
 }
 
@@ -12,23 +13,23 @@ body {
   cursor: pointer;
   font-size: 20px;
   font-weight: bold;
-  height: 40px;
+  height: 45px;
   margin: 0 5px;
   outline: 1px solid #000;
   text-align: center;
-  width: 40px;
+  width: 45px;
 }
 
 .btn:hover {
   scale: 1.025;
 }
 
-.btn_container {
+.btn-container {
   padding: 20px 10px;
   /* outline: solid 1px red; */
 }
 
-.btn_group {
+.btn-group {
   -ms-flex-direction: row;
   -ms-flex-pack: center;
   -webkit-box-direction: normal;
@@ -41,6 +42,10 @@ body {
   justify-content: center;
   margin-bottom: 10px;
   /* outline: solid 1px red; */
+}
+
+.btn-group:last-of-type {
+  margin-bottom: 0;
 }
 
 .calculator {
@@ -60,26 +65,80 @@ body {
   justify-content: center;
   margin: 0 auto;
   outline: solid 1px #000;
-  padding: 20px 15px;
-  width: 250px;
+  padding: 30px 15px;
+  position: relative;
+  width: 275px;
 }
 
-.clear_btn {
+.clear-btn {
   background-color: #FF4500;
-  width: 85px;
+  width: 100px;
 }
 
+.company-name {
+  bottom: 5px;
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  /* outline: solid 1px red; */
+}
 
-.equals_btn {
+.container {
+  -ms-flex-align: center;
+  -ms-flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  align-items: center;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+  width: 80%;
+  /* outline: solid 1px red; */
+}
+
+.container p {
+  -webkit-box-shadow: 0 0 20px #000;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 20px #000;
+  color: red;
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding: 20px 10px;
+  width: 500px;
+}
+
+.equals-btn {
   background-color: #87CEFA;
-  width: 85px;
+  width: 100px;
 }
 
 footer {
   background-color: #000;
   color: #fff;
-  padding: 15px 0;
+  padding: 30px 0;
+  position: relative;
   text-align: center;
+}
+
+.footer-logo {
+  -webkit-transform: translateY(-50%);
+  left: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+}
+
+.footer-logo img {
+  height: auto;
+  width: 100%;
 }
 
 .header {
@@ -91,22 +150,7 @@ footer {
   /* outline: solid 1px blue; */
 }
 
-.output {
-  background-color: #C0C0C0;
-  border: solid 2px #000;
-  border-radius: 5px;
-  font-size: 20px;
-  margin: 0 auto;
-  padding: 5px;
-  width: 180px;
-  /* outline: solid 1px blue; */
-}
-
-.output:focus {
-  outline: none;
-}
-
-main {
+.main {
   -ms-flex-align: center;
   -ms-flex-direction: column;
   -ms-flex-pack: center;
@@ -115,19 +159,54 @@ main {
   -webkit-box-orient: vertical;
   -webkit-box-pack: center;
   align-items: center;
-  background-color: rgb(244, 164, 96);
+  background-attachment: fixed;
+  background-image: -webkit-gradient(linear,
+      left bottom, left top,
+      from(rgba(0, 0, 0, 1)),
+      to(rgba(0, 0, 0, 0))),
+    url("../img/trees-and-stars.webp");
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0)),
+    url("../img/trees-and-stars.webp");
+  background-position: center;
+  background-size: cover;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
   min-height: 100%;
-  width: 100%;
   /* outline: solid 1px red; */
 }
 
+.output {
+  background-color: #C0C0C0;
+  border: solid 2px #000;
+  border-radius: 5px;
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 5px;
+  width: 210px;
+  /* outline: solid 1px blue; */
+}
+
+.output:focus {
+  outline: none;
+}
+
 @media(max-width: 700px) {
+  .container {
+    width: 90%;
+  }
+
+  .container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 20px 10px;
+    width: 100%;
+  }
+
   .header {
     font-size: 26px;
   }
@@ -135,6 +214,22 @@ main {
 
 @media (max-width: 400px) {
   .calculator {
-    width: 75%;
+    width: 95%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .main {
+    background-image: -webkit-gradient(linear,
+        left bottom, left top,
+        from(rgba(0, 0, 0, 1)),
+        to(rgba(0, 0, 0, 0))),
+      url("../img/trees-and-stars-mobile.webp");
+    background-image: linear-gradient(0deg,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0)),
+      url("../img/trees-and-stars-mobile.webp");
   }
 }
