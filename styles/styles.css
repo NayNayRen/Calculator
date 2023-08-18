@@ -272,6 +272,7 @@ footer {
 
 .output-entered span {
   color: #fff;
+  font-weight: bold;
   margin-bottom: 5px;
 }
 
@@ -298,12 +299,12 @@ footer {
 }
 
 .solar-container {
-  -ms-flex-align: end;
+  -ms-flex-align: start;
   -ms-flex-direction: row;
-  -webkit-box-align: end;
+  -webkit-box-align: start;
   -webkit-box-direction: normal;
   -webkit-box-orient: horizontal;
-  align-items: flex-end;
+  align-items: flex-start;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -338,7 +339,7 @@ footer {
 
 @media (max-width: 400px) {
   .calculator {
-    width: 80%;
+    width: 85%;
   }
 
   .container {

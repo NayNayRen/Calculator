@@ -21,7 +21,7 @@ function equals() {
       return document.calculator.output.value = 'Empty Input...'
     } else {
       outputEntered.innerHTML = `
-      <span>Expression</span>
+      <span>Expression :</span>
       <p>${document.calculator.output.value}</p>
       `;
       outputEntered.classList.add('output-entered-action');
