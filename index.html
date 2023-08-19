@@ -5,12 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description"
+    content="My name is Nate Moscato, This is a simple calculator that I built. It uses HTML, CSS, and vanilla JavaScript to do all the deeds. It checks for correct evaluation, and will display the expression just used.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Dancing+Script&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="styles/page-reset.css">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/page-reset.css">
   <title>My Calculator</title>
   <link rel="icon" href="img/logo.png" type="image/x-icon" />
 </head>
@@ -25,7 +27,7 @@
     <h1>A Calculator Done By Me</h1>
     <div class="container">
       <div class="output-entered">
-        <!-- will be shot in -->
+        <!-- expression will be shot in -->
       </div>
       <form class="calculator" name="calculator">
         <input class="output" name="output" disabled>
@@ -42,31 +44,31 @@
           </div>
           <div class="btn-group">
             <input type="button" class="back-btn" value="Del">
-            <input type="button" class="btn" id="btn-1" value="(">
-            <input type="button" class="btn" id="btn-2" value=")">
-            <input type="button" class="btn" id="add-btn" value="+">
+            <input type="button" class="btn" value="(">
+            <input type="button" class="btn" value=")">
+            <input type="button" class="btn" value="+">
           </div>
           <div class="btn-group">
-            <input type="button" class="btn" id="btn-1" value="1">
-            <input type="button" class="btn" id="btn-2" value="2">
-            <input type="button" class="btn" id="btn-3" value="3">
-            <input type="button" class="btn" id="sub-btn" value="-">
+            <input type="button" class="btn" value="1">
+            <input type="button" class="btn" value="2">
+            <input type="button" class="btn" value="3">
+            <input type="button" class="btn" value="-">
           </div>
           <div class="btn-group">
-            <input type="button" class="btn" id="btn-4" value="4">
-            <input type="button" class="btn" id="btn-5" value="5">
-            <input type="button" class="btn" id="btn-6" value="6">
-            <input type="button" class="btn" id="mult-btn" value="*">
+            <input type="button" class="btn" value="4">
+            <input type="button" class="btn" value="5">
+            <input type="button" class="btn" value="6">
+            <input type="button" class="btn" value="*">
           </div>
           <div class="btn-group">
-            <input type="button" class="btn" id="btn-7" value="7">
-            <input type="button" class="btn" id="btn-8" value="8">
-            <input type="button" class="btn" id="btn-9" value="9">
-            <input type="button" class="btn" id="div-btn" value="/">
+            <input type="button" class="btn" value="7">
+            <input type="button" class="btn" value="8">
+            <input type="button" class="btn" value="9">
+            <input type="button" class="btn" value="/">
           </div>
           <div class="btn-group">
-            <input type="button" class="btn" id="btn-0" value="0">
-            <input type="button" class="btn" id="dec-btn" value=".">
+            <input type="button" class="btn" value="0">
+            <input type="button" class="btn" value=".">
             <input type="button" class="equals-btn" value="=">
           </div>
         </div>
@@ -78,7 +80,7 @@
         <p>Why? Because...why not? Yeah, there's calculators in literally everything now, but I
           didn't build those. I built this one. It can perform some basic math: add, subtract, multiply and divide.
         </p>
-        <p>The most recent expression used will show up. If something
+        <p>The most recent expression used will display. If something
           doesn't evaluate, it will tell you.</p>
       </div>
     </div>
@@ -89,7 +91,7 @@
     </div>
     <span>&copy; August 2023</span>
   </footer>
-  <script src="scripts/calculations.js" charset="utf-8"></script>
+  <script src="scripts/script.js" charset="utf-8"></script>
   <script src="https://kit.fontawesome.com/5dd3e4fc9a.js" crossorigin="anonymous" defer></script>
 </body>
 
