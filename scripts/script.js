@@ -5,6 +5,9 @@ const clearButton = document.querySelector('.clear-btn');
 let buttons = document.querySelectorAll('.btn');
 
 function insert(number) {
+  if (document.calculator.output.value === 'Empty Input...' || document.calculator.output.value === 'Invalid Input...') {
+    document.calculator.output.value = '';
+  }
   document.calculator.output.value = document.calculator.output.value + number;
 }
 
@@ -18,7 +21,7 @@ function evaluate() {
   try {
     eval(expression);
     if (eval(expression) === undefined) {
-      return document.calculator.output.value = 'Empty Input...'
+      return document.calculator.output.value = 'Empty Input...';
     } else {
       outputEntered.innerHTML = `
         <span>Expression Used :</span>
